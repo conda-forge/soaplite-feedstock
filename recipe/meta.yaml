@@ -22,6 +22,7 @@ requirements:
     - pip
   run:
     - python
+    - pip
     - numpy
     - scipy
     - future
@@ -30,6 +31,8 @@ requirements:
 test:
   imports:
     - soaplite
+  commands:
+    - pip check
 
 about:
   home: https://github.com/SINGROUP/SOAPLite
