@@ -1,11 +1,11 @@
-About soaplite
-==============
+About soaplite-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/soaplite-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/SINGROUP/SOAPLite
 
-Package license: LGPL-3.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/soaplite-feedstock/blob/main/LICENSE.txt)
+Package license: LGPL-3.0-only
 
 Summary: Fast lightweight SOAP implementation for machine learning in quantum chemistry and materials physics.
 
@@ -50,10 +50,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_python3.8.____73_pypy</td>
+              <td>linux_64_python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7553&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soaplite-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.8.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soaplite-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -92,10 +92,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_python3.8.____73_pypy</td>
+              <td>osx_64_python3.12.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7553&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soaplite-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.8.____73_pypy" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/soaplite-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
