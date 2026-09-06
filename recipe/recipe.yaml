@@ -1,0 +1,56 @@
+schema_version: 1
+
+context:
+  name: soaplite
+  version: "1.0.3"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 268fa1ab4036c94df8de1432929d3a40eb8c4db208e1c783374eece1b4ef350b
+
+build:
+  number: 9
+  skip: win
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  build:
+    - ${{ compiler('c') }}
+    - ${{ stdlib("c") }}
+  host:
+    - python
+    - pip
+    - setuptools
+  run:
+    - python
+    - pip
+    - numpy
+    - scipy
+    - future
+    - ase
+
+tests:
+  - python:
+      imports:
+        - soaplite
+      pip_check: true
+
+about:
+  license: LGPL-3.0-only
+  license_file: LICENSE
+  summary: Fast lightweight SOAP implementation for machine learning in quantum chemistry and materials physics.
+  description: |
+    Smooth Overlap of Atomic Positions (SOAP) is an algorithm used
+    for accurately classifying and machine learning chemical
+    environments.
+  homepage: https://github.com/SINGROUP/SOAPLite
+  repository: https://github.com/SINGROUP/SOAPLite
+  documentation: https://github.com/SINGROUP/SOAPLite
+
+extra:
+  recipe-maintainers:
+    - jan-janssen
